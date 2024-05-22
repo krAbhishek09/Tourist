@@ -26,6 +26,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +34,56 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    /* Add transition and transform effects to the service-item class */
+    .service-item {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Define the hover effect */
+    .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Optional: Adding a subtle hover effect for the icons */
+    .service-item i {
+        transition: color 0.3s ease;
+    }
+
+    .service-item:hover i {
+        color: #007bff;
+        /* Change the color to match your primary color */
+    }
+    .sticky-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.sticky-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-container ul li {
+    margin: 10px 0;
+}
+
+.sticky-container ul li a img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s;
+}
+
+.sticky-container ul li a img:hover {
+    transform: scale(1.1);
+}
+
+</style>
 
 <body>
     <!-- Spinner Start -->
@@ -50,10 +101,18 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York,
-                        USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 muz.</small>
+                    <small class="me-3 text-light">
+                        <i class="fa fa-phone-alt me-2"></i>
+                        <a href="tel:+0123456789" class="text-light">+012 345 6789</a>
+                    </small>
+
+                    <small class="text-light">
+                        <i class="fa fa-envelope-open me-2"></i>
+                        <a href="mailto:namastutebharat108@gmail.com"
+                            class="text-light">namastutebharat108@gmail.com</a>
+                    </small>
+
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">
@@ -79,7 +138,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Namaste Bharat</h1>
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Namastute Bharat</h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -142,11 +201,13 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to <span class="text-primary">Tourist</span></h1>
-                    <p class="mb-4">Explore serene beaches, where azure waters meet golden sands, promising tranquility
-                        and relaxation for all visitors to cherish.</p>
-                    <p class="mb-4">Dive into bustling streets with iconic landmarks, offering endless adventures and
-                        vibrant experiences for curious urban explorers to enjoy.
+                    <h1 class="mb-4">Welcome to <br> <span class="text-primary">Namastute Bharat</span></h1>
+                    <p class="mb-4">Welcome to Namastute Bharat, your gateway to the wonders of India! From the majestic
+                        Himalayas to the serene backwaters of Kerala, experience the rich tapestry of culture, heritage,
+                        and natural beauty.</p>
+                    <p class="mb-4">Join us in exploring vibrant cities, historic landmarks, and breathtaking
+                        landscapes. Let Namastute Bharat be your guide to unforgettable adventures across this
+                        incredible country.
                     </p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
@@ -190,7 +251,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <h5>WorldWide Tours</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>WorldWide Tours offers immersive, personalized travel experiences to breathtaking
+                                destinations worldwide, ensuring unforgettable adventures.</p>
                         </div>
                     </div>
                 </div>
@@ -199,7 +261,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
                             <h5>Hotel Reservation</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Enjoy a luxurious stay at our hotel with modern amenities, stunning views, fine dining,
+                                and exceptional service. Book your reservation today!</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +271,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-user text-primary mb-4"></i>
                             <h5>Travel Guides</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Comprehensive travel guides: tips, itineraries, visuals, cultural insights, budget
+                                advice, personal recommendations, outdoor routes, urban info.</p>
                         </div>
                     </div>
                 </div>
@@ -217,7 +281,8 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-cog text-primary mb-4"></i>
                             <h5>Event Management</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Event management involves planning, organizing, and executing events, including
+                                conferences, weddings, festivals, and corporate functions.</p>
                         </div>
                     </div>
                 </div>
@@ -482,8 +547,8 @@
                                         </select> -->
 
                                         <input type="sub" class="form-control bg-transparent" id="select1"
-                                        placeholder="Your Subject" required>
-                                    <label for="email">Your Subject</label>
+                                            placeholder="Your Subject" required>
+                                        <label for="email">Your Subject</label>
 
 
 
@@ -498,7 +563,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-outline-light w-100 py-3" type="button" value="button" onclick="Send()">Book Now</button>
+                                    <button class="btn btn-outline-light w-100 py-3" type="button" value="button"
+                                        onclick="Send()">Book Now</button>
                                 </div>
                             </div>
                         </form>
@@ -564,6 +630,96 @@
         </div>
     </div> -->
     <!-- Process Start -->
+<!-- faq -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">FAQ</h6>
+            <h1 class="mb-5">Frequently Asked Questions</h1>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is your return policy?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I track my order?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can track your order using the tracking number provided in your order confirmation email.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I change or cancel my order?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you can change or cancel your order within 24 hours of placing it. Please contact our customer support team for assistance.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Do you offer international shipping?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, we offer international shipping to most countries. Shipping charges and delivery times may vary depending on your location.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How can I contact customer support?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can contact our customer support team via email at support@example.com or by calling our helpline at +123 456 7890.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sticky Social Icons -->
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
+            </a>
+        </li>
+        <li>
+            <a href="https://facebook.com/yourprofile" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook" />
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 
     <!-- Team Start -->
@@ -577,7 +733,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="/toimg/211.png" alt="">
+                            <img class="img-fluid w-100" src="/toimg/211.png" alt=""
+                                style="height: 300px; object-fit: cover;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -593,7 +750,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="/toimg/3.jpg" alt="">
+                            <img class="img-fluid w-100" src="/toimg/3.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -609,7 +767,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="/toimg/4.jpg" alt="">
+                            <img class="img-fluid w-100" src="/toimg/4.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -625,7 +784,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="/toimg/5.jpg" alt="">
+                            <img class="img-fluid w-100" src="/toimg/5.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -638,9 +798,62 @@
                         </div>
                     </div>
                 </div>
+                <!-- Additional three cards -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100" src="/toimg/io2.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Aniket</h5>
+                            <!-- <small>Designation</small> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100" src="/toimg/io3.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Raj</h5>
+                            <!-- <small>Designation</small> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid w-100" src="/toimg/io4.jpg" alt=""
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Suman</h5>
+                            <!-- <small>Designation</small> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Team End -->
 
 
@@ -659,22 +872,43 @@
                     <!-- <p>New York, USA</p> -->
                     <p class="mb-0">Had an amazing time in New York! The tour was well-organized and exceeded my
                         expectations.</p>
+                    <div class="star-rating mt-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg"
                         style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Michael </h5>
+                    <h5 class="mb-0">Michael</h5>
                     <!-- <p>London, UK</p> -->
                     <p class="mt-2 mb-0">Absolutely loved the London tour! Great guides and fascinating insights into
                         the city's history.</p>
+                    <div class="star-rating mt-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg"
                         style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Sophia </h5>
+                    <h5 class="mb-0">Sophia</h5>
                     <!-- <p>Paris, France</p> -->
                     <p class="mt-2 mb-0">Parisian tour was fantastic! Enjoyed every moment exploring the charming
                         streets and landmarks.</p>
+                    <div class="star-rating mt-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
                 </div>
                 <div class="testimonial-item bg-white text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg"
@@ -683,10 +917,18 @@
                     <!-- <p>Rome, Italy</p> -->
                     <p class="mt-2 mb-0">Rome tour exceeded expectations! Wonderful guides and fascinating historical
                         sites.</p>
+                    <div class="star-rating mt-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Testimonial End -->
 
@@ -707,7 +949,7 @@
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>namastutebharat108@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -819,27 +1061,27 @@
             var body = "Name: " + name + "<br/> Email: " + email + "<br/> DateTime: " + datetime + "<br/> Message: " + message + "<br/>";
 
             console.log(body);
-                // console.log("Function calling");
-                Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "abhishekbhagat6654@gmail.com",
-                    Password: "2A157115350194C8FB98620802DFE87C1E67",
-                    To: 'abhishekbhagat6654@gmail.com',
-                    From: "abhishekbhagat6654@gmail.com",
-                    Subject: select1,
-                    Body: body
-                }).then(
-                    message =>{
-                    if(message=='OK'){
+            // console.log("Function calling");
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "abhishekbhagat6654@gmail.com",
+                Password: "2A157115350194C8FB98620802DFE87C1E67",
+                To: 'abhishekbhagat6654@gmail.com',
+                From: "abhishekbhagat6654@gmail.com",
+                Subject: select1,
+                Body: body
+            }).then(
+                message => {
+                    if (message == 'OK') {
 
                         swal("Successfull", "Your Data Successfull Received", "success");
                     }
-                    else{
+                    else {
 
                         swal("Something Wrong", "Your Data is not Received", "error");
                     }
                 }
-              );
+            );
         }
 
     </script>
